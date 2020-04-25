@@ -1,0 +1,109 @@
+SELECT * FROM Employee WHERE sal = 
+         (
+            SELECT MIN(sal) FROM Employee 
+            WHERE  sal IN (SELECT DISTINCT TOP N
+                            sal FROM Employee 
+                             ORDER BY sal DESC
+                             ))
+==================================
+A> Write an SQL query to find nth largest salary along with employee name.
+
+- We can use sub-query for this
+
+
+select salary from
+(select Distinct TOP 9 salary
+from employees
+order by salary Desc) Result
+Order by salary
+
+B)- Update employees set Salary='5000' where Age='30'
+
+select salary from 
+(select distinct top 9 salary
+from employees
+order by salary desc) result
+order by salary
+
+============================= Scenario for Promo Code Paytm
+
+1- To verify Add one or more products to the cart.
+2- To verify Go to the checkout page.
+3- To verify Add coupon code ‘NEW30’ and click ‘Add coupon.
+4- To verify Message "coupon successfully applied” is visible.
+5- To verify Discount clearly indicated in the cart summary section.
+6- To verify Cart total is reduced by 30%.
+7- To verify new user will get 30% on total billing amount once applied on a transaction above Rs. 1500.
+8- To verify the process of to enter the coupon code on your All out pack to get Paytm cash
+9- To verify validity and T&C apply , Available in select cities & outlet validation.
+10- To verify Check for issued coupons are valid or invalid.
+11- To verify and check Use Coupon code is for Guest User or not.
+12- To verify the same coupon should not be used by other members.
+13- To verify that user is able to add coupon code.
+14- To verify that error message will be displayed if mandatory fields leaves empty.
+15- To verify that error message will be displayed for invalid /expired dates/Coupan.
+16- To verify that user is able to select the Minimum order quantity [Minimum order quantity for discount to apply].
+16- To verify that error message will be displayed for other than the specified users for discounted coupan.
+17- To verify that user is able to see active/inactive/Applied coupon codes message.
+18- To verify add one more already used promo code.
+19- To verify enter invalid promo code.
+20- To verify and enter already expired promo code.
+
+=============== 3- Coding
+
+
+1- To chech the prime number be N.
+2- To check Divide the number n by 1 remainder=0 pass.
+3- To check Divide the number n by n remainder=0 pass.
+4- To check Divide the number n by 2 remainder!=0 pass.
+5- Divide the number n by up to n-1 and if remainder not equal 0, then it will me prime number.
+6- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
